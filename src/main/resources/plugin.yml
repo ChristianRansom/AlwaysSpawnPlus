@@ -1,0 +1,6 @@
+name: SonezSpawnJoin
+main: com.fun.spawntp.Main
+author: fun
+version: 0.0.1
+commands:
+  setwspawn:
