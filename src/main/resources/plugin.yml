@@ -1,5 +1,5 @@
-name: SonezSpawnJoin
-main: com.fun.spawntp.Main
+name: AlwaysSpawnPlus
+main: muttsworld.dev.team.AlwaysSpawnPlus.AlwaysSpawnPlus
 author: fun
 version: 0.0.1
 commands:

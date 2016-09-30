@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>muttsworld.dev.team</groupId>
-  <artifactId>AnvilGame</artifactId>
+  <artifactId>AlwaysSpawnPlus</artifactId>
   <version>0.0.1</version>
   <packaging>jar</packaging>
 
-  <name>AnvilGame</name>
+  <name>AlwaysSpawnPlus</name>
   <url>http://maven.apache.org</url>
 
   <properties>
