@@ -6,6 +6,8 @@ package muttsworld.dev.team.AlwaysSpawnPlus;
  *   for our own personal use along with adding a few additional functions. 
  *   
  *   This plugin was updated for spigot 1.10.2
+ *   
+ *   
 */
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
