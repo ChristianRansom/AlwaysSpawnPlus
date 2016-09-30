@@ -47,23 +47,13 @@ public class AlwaysSpawnPlus extends JavaPlugin implements Listener
         getConfig().set("spawn.z", 
           Double.valueOf(p.getLocation().getZ()));
         saveConfig();
-        p.sendMessage("§bSOJ> §7Spawn Set §aSuccessfully!");
-        Player[] arrayOfPlayer;
-        int j = (arrayOfPlayer = Bukkit.getOnlinePlayers()).length;
-        for (int i = 0; i < j; i++)
-        {
-          Player all = arrayOfPlayer[i];
-          if (all.hasPermission("spawnonjoin.listen")) {
-            all.sendMessage("§b> §7The spawn was set by §b" + 
-              p.getDisplayName() + "§7!");
-          }
-        }
-        p.playSound(p.getLocation(), Sound.LEVEL_UP, 10.0F, -10.0F);
+        p.sendMessage("§bSOJ> §7Spawn Set §aSuccessfully!");        
+        p.playSound(p.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 10.0F, -10.0F);
       }
       else
       {
         p.sendMessage("§b> §7You do not have the permission §ospawnonjoin.set");
-        p.playSound(p.getLocation(), Sound.NOTE_BASS, 10.0F, -10.0F);
+        p.playSound(p.getLocation(), Sound.BLOCK_NOTE_BASEDRUM, 10.0F, -10.0F);
       }
     }
     if (cmd.getName().equalsIgnoreCase("spawn"))
@@ -75,7 +65,7 @@ public class AlwaysSpawnPlus extends JavaPlugin implements Listener
       double z = getConfig().getDouble("spawn.z");
       p.teleport(new Location(w, x, y, z));
       p.sendMessage("§e>> §6Teleporting to spawn...");
-      p.playSound(p.getLocation(), Sound.WITHER_SHOOT, 10.0F, -10.0F);
+      p.playSound(p.getLocation(), Sound.ENTITY_WITHER_SHOOT, 10.0F, -10.0F);
       p.addPotionEffect(new PotionEffect(PotionEffectType.CONFUSION, 120, 
         4));
     }
@@ -87,7 +77,7 @@ public class AlwaysSpawnPlus extends JavaPlugin implements Listener
       p.sendMessage("§a/soj spawn§7: §fTeleports to the server spawnpoint.");
       p.sendMessage("§7§oPermissions§7:");
       p.sendMessage("§aspawnonjoin.set§7: §fAllows access to /setspawn.");
-      p.playSound(p.getLocation(), Sound.LEVEL_UP, 10.0F, -10.0F);
+      p.playSound(p.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 10.0F, -10.0F);
     }
     return true;
   }
