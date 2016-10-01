@@ -1,0 +1,6 @@
+name: AlwaysSpawnPlus
+main: muttsworld.dev.team.AlwaysSpawnPlus.AlwaysSpawnPlus
+author: fun
+version: 0.0.1
+commands:
+  setwspawn:
